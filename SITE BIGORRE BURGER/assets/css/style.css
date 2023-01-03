@@ -1,0 +1,571 @@
+/*=============== FONTS ===============*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+@font-face {
+    font-family: 'Brice-Bold';
+    src: url('../font/Brice-Bold.otf');
+}
+
+/*=============== VARIABLES CSS ===============*/
+
+:root {
+    /*========== Colors ==========*/
+    --first-color: #12171D;
+    --second-color: #FFFFFF;
+    --third-color: #FDAB2E;
+    --for-color: #B94323;
+
+    /*========== Font and typography ==========*/
+    
+    /*========== Font weight ==========*/
+}
+
+
+/* Responsive typography */
+
+
+
+/*=============== BASE ===============*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+a:hover{
+    color: var(--first-color);
+}
+
+ul{
+    list-style-type: none;
+
+}
+
+h3{
+    text-align: center;
+    grid-template-columns: repeat(3, 192px);
+    column-gap: 3rem;
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+
+
+}
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+.section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    
+}
+
+/*=============== HEADER ===============*/
+.header{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items :center;
+    padding: 15px 250px;
+    transition: 0.5 ease;
+    font-family: 'Brice-Bold';
+}
+
+.logo{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 8rem;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+header .brand{
+    position: relative;
+}
+header .navigation .navigation-items a{
+    position: relative;
+    color: var(--first-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background: var(--third-color);
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    border-radius: 2rem;
+    transition: 0.3 ease;
+    transform: scale(1.1);
+
+
+}
+
+header .navigation .navigation-items a:hover:before{
+width: 100%;
+}
+
+.home_section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home_section::before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.test:hover{
+    color: #FDAB2E;
+}
+.home_section .content{
+    z-index: 0;
+    width: 70%;
+    padding-left: 5rem;
+}
+
+.home_section .content h1{
+    font-size: 2.5rem;
+    font-family: 'Brice-Bold';
+    color: #B94323;
+    margin-top: 0.1rem;
+    padding-bottom: 2rem;
+}
+
+.content{
+    letter-spacing:;
+    margin-left: 6rem;
+    
+    
+}
+
+.home_section img{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.burger_title{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items :center;
+    padding: 15px 250px;
+    font-family: 'Brice-Bold';
+    vertical-align : middle;
+
+}
+.video{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    margin-bottom: -0.15rem;
+
+}
+
+.video2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: -0.15rem;
+    margin-top: -2rem;
+}
+/*=============== HOME ===============*/
+
+/*=============== BURGER ===============*/
+.heading{
+    text-align: center;
+    margin-bottom: 3rem; 
+}
+
+.menu{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: var(--third-color);
+    font-family: 'Brice-Bold';
+    margin: 0;
+    align-items: center;
+}
+
+.heading{
+    font-size: 2.5rem;
+    color: var(--first-color);
+}
+
+.propos {
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+
+}
+.contenu{
+    text-align: left;
+    font: normal normal bold 42px/52px Poppins;
+    letter-spacing: 0px;
+    opacity: 1;
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-align: left;
+    position: absolute;
+    padding-left: 2rem;
+    margin-right: 25rem;
+    padding-bottom: 3rem;
+    font-size: clamp(1rem, 2rem, 2rem);
+}
+
+.rectangle{
+	width:22rem;
+	height: 36rem;
+    font-weight: bold;
+    font-size: clamp(0.5rem, 1.75rem, 2rem); ;
+	background: var(--second-color);
+    border-radius: 20px 0 0 0;
+    justify-content: right;   
+    position: relative;
+    margin-left: auto;
+    font-family: 'Poppins';
+    text-align: center;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+.burger{
+    display: flex;
+    padding-bottom: 3rem;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.burger:hover{
+cursor: pointer;
+}
+
+.rect{
+    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    justify-content: center;
+    color: var(--first-color);
+}
+
+.img_burg{
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+}
+
+#echez:hover{
+    transform: scale(1.1);
+   
+}
+
+#sady:hover{
+    transform: scale(1.1);
+}
+
+#cheese:hover{
+    transform: scale(1.1);
+   
+}
+.command{
+    align-items: center;
+    text-align: center;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 2rem;
+    font: normal normal bold 20px/45px Poppins;
+    letter-spacing: 0px;
+    color: #12171D;
+    position: relative;
+    opacity: 1;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+.command:hover{
+    color: var(--second-color);
+    background-color: #12171D;
+    animation: bounce 1s;
+
+    
+}
+
+ /*=============== PAGE BURGER ===============*/
+
+ .all{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.info{
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+    font-family: 'Brice-Bold';
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    padding: 15px 250px;
+    font-size: 1.5rem;
+    
+   
+}
+
+.prix{
+    margin-left: 23rem;
+    background: #F8DC44;
+    border-radius: 21px;
+    position: relative;
+    width: 260px;
+    height: 2rem;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 
+}
+
+
+.img_page{
+width:50%;
+align-items: left;
+position: relative;
+
+    object-fit: cover;
+}
+
+.info_burg{
+    padding: 2.5em;
+    display: grid;
+    background: #fdaa2e35;
+    border-radius: 45px 45px 0 0;
+    color: #000000;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 3px 6px #00000088;
+    font-family: 'Poppins';
+    text-align: center;
+    letter-spacing: 0px;
+    align-items: right;
+    margin-right: 5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: -1rem;
+}
+
+
+.img_text{
+    display: flex;
+}
+
+/*=============== ABOUT ===============*/
+.propos{
+    background-color: var(--first-color);
+    color: var(--second-color);
+    font-family: 'Brice-Bold';
+
+}
+
+
+.heading .propos{
+    font-size: 2.5rem;
+    color: var(--second-color);
+}
+/*=============== FOOTER ===============*/
+.footer {
+    
+}
+
+.footer_container {
+    padding: 2rem 0 2rem;
+    background-color: var(--first-color);
+    color: var(--second-color) ;
+    font-family: 'Poppins';
+
+}
+
+.footer_title,
+.footer_link {
+}
+
+.footer_title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Brice-Bold';
+}
+
+li{
+text-decoration: none;
+}
+
+.footer_list {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: var(--second-color);
+
+}
+
+.footer_social {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.25rem;
+    color: var(--third-color);
+}
+
+.footer_social-link {
+    padding: .25rem;
+    border-radius: .25rem;
+    font-size: 1rem;
+    display: inline-flex;
+    color: var(--second-color);
+}
+
+.footer_social-link:hover {
+    color: var(--third-color);
+    transform: scale(1.1);
+}
+
+.footer_link:hover {
+    color: var(--third-color);
+    transform: scale(1.8);
+}
+
+.footer_copy {
+    display: block;
+    margin-top: 4.5rem;
+    text-align: center;
+    font-size: var(--small-font-size);
+}
+.B2{
+    color: var(--third-color);
+}
+
+.B1{
+    color: var(--for-color);
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+
+
+/* For small devices */
+
+
+/* For medium devices */
+
+@media (min-width : 1040px) {
+    .header{
+        padding: 12px 20px;
+        transition: 0.5s ease;
+    }
+
+    .content{
+        padding: 12px 20px;
+        transition: 0.5s ease;
+    }
+
+    .section{
+        padding: 100px 20px;
+    }
+
+    .home_section{
+        padding: 10px 20px;
+    }
+    
+    
+}
+/* For large devices */
+
+@media (max-width : 1040px) {
+    .header{
+        padding: 12px 20px;
+        transition: 0.5s ease;
+    }
+
+    .content{
+        padding: 12px 20px;
+        transition: 0.5s ease;
+    }
+
+    .section{
+        padding: 100px 20px;
+    }
+
+    .home_section{
+        padding: 10px 20px;
+    }
+    
+
+    .contenu{
+        font-size: 0.8rem;
+        letter-spacing: -1px;
+        
+    }
+}
+
+@media (max-width : 744px) {
+    .contenu{
+        font-size: 0.5rem;
+        letter-spacing: -1px;
+        align-items: baseline;
+    }
+}
+
